@@ -33,7 +33,7 @@ public class SlipTripPlayer : MonoBehaviour
     private bool isSliding = false;
     private float haltTimer = 0f;
     private float haltDuration = 2;
-        void Start()
+    void Start()
     {
 
         rb = GetComponent<Rigidbody2D>();
@@ -74,25 +74,26 @@ public class SlipTripPlayer : MonoBehaviour
         else //normal movement
         { 
             {
-                rb.velocity = new Vector2(x: inputVector.x * activeMoveSpeed, y: inputVector.y * activeMoveSpeed);
+        rb.velocity = new Vector2(x: inputVector.x * activeMoveSpeed, y: inputVector.y * activeMoveSpeed);
             }
 
-            if (dashCounter > 0)
-            {
-                dashCounter -= Time.deltaTime;
+        if (dashCounter > 0)
+        {
+            dashCounter -= Time.deltaTime;
 
-                if (dashCounter <= 0)
-                {
-                    activeMoveSpeed = speed;
-                    dashCoolCounter = dashCooldown;
-                }
-            }
-
-            if (dashCoolCounter > 0)
+            if (dashCounter <= 0)
             {
-                dashCoolCounter -= Time.deltaTime;
+                activeMoveSpeed = speed;
+                dashCoolCounter = dashCooldown;
             }
         }
+
+        if (dashCoolCounter > 0)
+        {
+            dashCoolCounter -= Time.deltaTime;
+        }
+
+    }
     }
 
     void OnMove(InputValue value)

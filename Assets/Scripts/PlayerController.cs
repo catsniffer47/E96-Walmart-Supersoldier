@@ -63,7 +63,10 @@ public class PlayerController : MonoBehaviour
     {
         inputVector = val.Get<Vector2>();
         Debug.Log("Moving!");
-
+        if (inputVector != Vector2.zero)
+        {
+            transform.up = inputVector;
+        }
     }
 
     void OnDash(InputValue val)

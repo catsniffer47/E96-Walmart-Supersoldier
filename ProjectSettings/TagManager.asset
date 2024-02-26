@@ -6,6 +6,7 @@ TagManager:
   tags:
   - obstacle
   - slip
+  - Thief
   layers:
   - Default
   - TransparentFX
