@@ -61,6 +61,7 @@ public class SlipTripPlayer : MonoBehaviour
             {
                 // Enable player movement again
                 isHalted = false;
+                anim.SetBool("obstacleHit", false);
                 // Reset the timer
                 haltTimer = 0f;
             }
@@ -120,6 +121,7 @@ public class SlipTripPlayer : MonoBehaviour
         {
             Debug.Log("obstacle");
             isHalted = true;
+            anim.SetBool("obstacleHit", true);
 
         }
         if (other.gameObject.CompareTag("slip"))
