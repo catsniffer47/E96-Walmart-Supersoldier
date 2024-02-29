@@ -5,7 +5,28 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/slip_trip_josh.unity
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: Assets/Scenes/MainMenu.unity
+    guid: 1f83afb689fda4f16be477c5b28c63e1
+  - enabled: 1
+    path: Assets/Scenes/Start Screen.unity
+    guid: 784f7bfb5c2f84f798e96f5bad2f6a7b
+  - enabled: 1
+    path: Assets/Scenes/How To Play Screen.unity
+    guid: dc38178d04c2a41879e48abf7d2b7a33
+  - enabled: 1
+    path: Assets/Scenes/Credit Screen.unity
+    guid: 60226c8822d6b4ffeb90e397d5d176d7
+  - enabled: 1
+    path: Assets/Scenes/Walmart.unity
+    guid: 99e90c737fe9741568dab51f4360f412
+  - enabled: 1
+    path: Assets/Scenes/End Screen.unity
+    guid: b9ab1a8efb81d45ba92a8e3f9180101a
+  - enabled: 1
+    path: Assets/Scenes/Game Over.unity
+    guid: fe048959d383d4b3aa191da8896109d2
   m_configObjects: {}

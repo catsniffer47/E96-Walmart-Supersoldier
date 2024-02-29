@@ -4,9 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - obstacle
-  - slip
-  - Thief
+  - MenuMusic
+  - Enemy
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -43,4 +43,28 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3512330193
+    locked: 0
+  - name: Above Background
+    uniqueID: 609460537
+    locked: 0
+  - name: Obstacles
+    uniqueID: 401704307
+    locked: 0
+  - name: Above Obstacles
+    uniqueID: 2991607923
+    locked: 0
+  - name: Above Obstacles 2
+    uniqueID: 3164663385
+    locked: 0
+  - name: Above Obstacles 3
+    uniqueID: 2466812471
+    locked: 0
+  - name: Character
+    uniqueID: 2363715015
+    locked: 0
+  - name: Above Character
+    uniqueID: 3459332369
     locked: 0
