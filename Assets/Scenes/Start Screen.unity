@@ -268,7 +268,6 @@ GameObject:
   - component: {fileID: 18977644}
   - component: {fileID: 18977643}
   - component: {fileID: 18977645}
-  - component: {fileID: 18977646}
   m_Layer: 0
   m_Name: MenuSong
   m_TagString: MenuMusic
@@ -285,7 +284,7 @@ AudioSource:
   m_GameObject: {fileID: 18977642}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: b98987df5dfb0344ab2eec0590d3c415, type: 2}
   m_audioClip: {fileID: 8300000, guid: e64d4287bd4ec4d1394dd4d439124adf, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -399,19 +398,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e17ce7c364df0444a85a800884d18d9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &18977646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 18977642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 015fc753552e6ec4bbe664e8f4f77974, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeSlider: {fileID: 0}
 --- !u!1 &104154355
 GameObject:
   m_ObjectHideFlags: 0
