@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/slip_trip_josh.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
     path: Assets/Scenes/MainMenu.unity
@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game Over.unity
     guid: fe048959d383d4b3aa191da8896109d2
+  - enabled: 1
+    path: Assets/Scenes/Settings Screen.unity
+    guid: bec82e8ee782ca34ba122ff1a51a4383
   m_configObjects: {}
