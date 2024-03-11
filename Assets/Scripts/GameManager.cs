@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    public TextMeshProUGUI enemyCountText;
     private int totalEnemies;
     private int enemiesDestroyed;
 
@@ -13,10 +15,21 @@ public class GameManager : MonoBehaviour
         // Count all enemies at the beginning
         UpdateTotalEnemiesCount();
     }
-
+    void Update()
+    {
+        UpdateEnemyCountUI();
+    }
     void UpdateTotalEnemiesCount()
     {
         totalEnemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
+    }
+
+    void UpdateEnemyCountUI()
+    {
+        if (enemyCountText != null)
+        {
+            enemyCountText.text = "Thieves Found: " + enemiesDestroyed.ToString() +"/5";
+        }
     }
 
     public void EnemyDestroyed()
