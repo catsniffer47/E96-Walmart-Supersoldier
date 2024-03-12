@@ -7,6 +7,7 @@ public class EnemyScript : MonoBehaviour
     private Animator animator;
     public AudioClip deathSound;
     private AudioSource audioSource;
+    public EnemyMovementFINAL movementFinal;
 
     private GameManager gameManager; // Reference to the GameManager
 
@@ -31,10 +32,12 @@ public class EnemyScript : MonoBehaviour
             }
 
             Destroy(col.gameObject);
+            Destroy(GetComponent<CapsuleCollider2D>());
 
             StartCoroutine(DestroyEnemyWithDelay());
         }
     }
+
 
     void HandleBulletHit()
     {
@@ -57,7 +60,7 @@ public class EnemyScript : MonoBehaviour
     IEnumerator DestroyEnemyWithDelay()
     {
         yield return new WaitForSeconds(animator.GetCurrentAnimatorClipInfo(0).Length);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
 
         // Notify the GameManager that an enemy is destroyed
         gameManager.EnemyDestroyed();

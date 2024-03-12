@@ -284,10 +284,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Join Gail Lewis, the legendary 10-year associate, in her retired return
-    to Walmart to stop crime. Utilize WASD for movement, Shift to dash, and the mouse
-    to click and shoot your tag gun, taking down delinquents in a high-stakes battle
-    to restore order within the superstore. Unleash Gail's unmatched Walmart wisdom
-    to triumph in this thrilling adventure!
+    to Walmart to pursue thieves and prevent their escape. Utilize WASD for movement,
+    Shift to dash, and the mouse to click and shoot your tag gun, taking down delinquents
+    in a high-stakes battle to restore order within the superstore. Unleash Gail's
+    unmatched Walmart wisdom to triumph in this thrilling adventure!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8b0b1c8a08eaf4acb82e113e58949f74, type: 2}
   m_sharedMaterial: {fileID: -1107861454662233488, guid: 8b0b1c8a08eaf4acb82e113e58949f74, type: 2}

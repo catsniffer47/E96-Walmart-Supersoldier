@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Settings Screen.unity
     guid: bec82e8ee782ca34ba122ff1a51a4383
+  - enabled: 1
+    path: Assets/Scenes/Walmart (NoSpawner).unity
+    guid: 8815ac85b63ea5c4d8a1474ba0b170df
   m_configObjects: {}

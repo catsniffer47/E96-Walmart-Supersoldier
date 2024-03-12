@@ -5,7 +5,7 @@ using UnityEngine;
 public class playerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    public float runSpeed = 10f; // Speed when running
+    public float runSpeed = 8f; // Speed when running
     public Rigidbody2D rb;
     public Animator animator;
     private Vector2 movement;
@@ -13,6 +13,13 @@ public class playerMovement : MonoBehaviour
 	public Vector2 GetMovementDirection()
    	{
     	return movement.normalized;
+    }
+
+    private void UpdateAnimator()
+    {
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.magnitude);
     }
 
     void Update()
@@ -23,9 +30,9 @@ public class playerMovement : MonoBehaviour
         // Check if the shift key is pressed to run
         float currentMoveSpeed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : moveSpeed;
 
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
+        movement.Normalize();
+
+        UpdateAnimator();
 
         // Apply movement with the adjusted speed
         rb.MovePosition(rb.position + movement * currentMoveSpeed * Time.fixedDeltaTime);

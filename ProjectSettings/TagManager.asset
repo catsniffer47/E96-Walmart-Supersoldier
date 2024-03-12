@@ -7,6 +7,9 @@ TagManager:
   - MenuMusic
   - Enemy
   - Bullet
+  - Exit
+  - Awesome
+  - Thief
   layers:
   - Default
   - TransparentFX

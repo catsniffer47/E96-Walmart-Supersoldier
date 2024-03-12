@@ -26,4 +26,12 @@ public class DoNotDestroy : MonoBehaviour
             audioSource.Stop();
         }
     }
+
+    public void StartMusic()
+    {
+        if (audioSource != null && !audioSource.isPlaying)
+        {
+            audioSource.Play();
+        }
+    }
 }

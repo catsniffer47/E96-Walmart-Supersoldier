@@ -22,6 +22,6 @@ public class StartMenu : MonoBehaviour
         }
 
         // Load the next scene (you might want to adjust the index)
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 7);
     }
 }

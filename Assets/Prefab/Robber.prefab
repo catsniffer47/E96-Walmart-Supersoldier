@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6897427547703324999}
   - component: {fileID: 3142591058405862563}
   - component: {fileID: 5013716202195160622}
+  - component: {fileID: 8114639263201160893}
   m_Layer: 0
   m_Name: Robber
   m_TagString: Enemy
@@ -97,7 +98,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3390910612845268742}
-  m_BodyType: 2
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -185,6 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathSound: {fileID: 8300000, guid: 0b1819b0e25bf46adb8b5457dede9c3b, type: 3}
+  movementFinal: {fileID: 8114639263201160893}
 --- !u!82 &5013716202195160622
 AudioSource:
   m_ObjectHideFlags: 0
@@ -281,3 +283,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8114639263201160893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3390910612845268742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39abe8e218e5df748ae0839b980c02cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrolCheckpoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  escapeCheckpoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  moveSpeed: 3
+  escapeSpeed: 8
+  onTheRun: 0
